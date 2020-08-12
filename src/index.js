@@ -1,12 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
-import './index.css'
 import App from './components/index'
+import StorePriveder from './provider'
+
+import './index.css'
 
 ReactDOM.render(
-	<BrowserRouter>
-		<App />
-	</BrowserRouter>,
+	<StorePriveder>
+		<BrowserRouter>
+			<App />
+		</BrowserRouter>
+	</StorePriveder>,
 	document.getElementById('root'),
 )
